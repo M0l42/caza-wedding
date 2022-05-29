@@ -1,0 +1,36 @@
+{% load static %}
+
+<head>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<div style="height: 100%">
+    <div id="page-04" >
+        <div class="page">
+            <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-front"/>
+            <div class="Thanks">
+                <h1>À bientôt!</h1>
+                <h1 style="font-weight: bold">See you on board!</h1>
+            </div>
+        </div>
+    </div>
+    <div id="page-03" class="page">
+        <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
+        <img src="{% static "img/Gift.jpg" %}" alt="Passport" class="page-front"/>
+    </div>
+    <div id="page-02" class="page">
+        <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
+        <img src="{% static "img/Dress Code.jpg" %}" alt="Passport" class="page-front"/>
+    </div>
+    <div id="page-01" class="page transform">
+        <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
+        <img src="{% static "img/Reminder.jpg" %}" alt="Passport" class="page-front"/>
+    </div>
+
+    <button class="click-left" id="back"></button>
+    <button class="click-right" id="forth"></button>
+</div>
+
+<script src="{% static 'js/main.js' %}"></script>
+

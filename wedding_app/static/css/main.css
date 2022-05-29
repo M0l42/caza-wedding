@@ -1,0 +1,522 @@
+@font-face {
+    font-family: 'ananda_blackregular';
+    src: url('../fonts/ananda/ananda_black_personal_use-webfont.woff2') format('woff2'),
+         url('../fonts/ananda/ananda_black_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'anandaregular';
+    src: url('../fonts/ananda/ananda_personal_use-webfont.woff2') format('woff2'),
+         url('../fonts/ananda/ananda_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.home-page{
+    background-image: url("../img/background.jpg");
+    background-size: 100% 100%;
+}
+
+h4{
+    font-family: anandaregular;
+    font-size: 80px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+body{
+    background: #BE7C5A;
+}
+
+p{
+    font-family: anandaregular;
+    /*font-weight: bold;*/
+    max-width: 580px;
+    text-overflow: initial;
+    text-align: center;
+    font-size: 28px;
+}
+
+.page{
+    position : absolute;
+    /*height: 100%;*/
+    left: 700px;
+    margin: auto;
+    width: 650px;
+    transform-origin: left;
+  /*  transform: rotateY(180deg);*/
+    transform-style: preserve-3d;
+    /*display: none;                                                                                                                                                                                                                                       */
+    /*-webkit-backface-visibility: hidden; !* Safari *!*/
+    /*backface-visibility: hidden;*/
+}
+
+.page-front, .page-back {
+    position: absolute;
+    /*height: 100%;*/
+    width: 650px;
+    /*right: 0px;*/
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.page-front{
+    /*position : absolute;*/
+    /*height: 100%;*/
+    /*right : 0px;*/
+    /*backface-visibility: hidden;*/
+}
+
+.page-back{
+    /*position : absolute;*/
+    /*height: 100%;*/
+    /*right : 0px;*/
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    /*backface -visibility: hidden;*/
+}
+
+.transform {
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.transform-active {
+  /*height: 200%;*/
+  /*  right : 650px;*/
+  /*  transform: rotateY(-3.142rad);*/
+    /*left: 350px;*/
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+    transform-origin: left;
+    /**transform-origin: 50% 100%;*/
+}
+
+.transform-previous {
+    /*right : 650px;*/
+    /*transform: rotateY(3.142rad);*/
+    /*transform: rotateY(180deg);*/
+    transform: rotateY(-3.142rad);
+    transform-origin: left;
+  /*  transform: rotateY(180deg);*/
+    transform-style: preserve-3d;
+}
+
+.show{
+}
+
+.last-active{
+
+}
+
+/*.page-active{*/
+/*    position : absolute;*/
+/*    height: 100%;*/
+/*    right : 0px;*/
+/*    top : 50px;*/
+/*    backface-visibility: visible;*/
+/*}*/
+
+.click-left{
+    position: absolute;
+    height: 100%;
+    width: 325px;
+    left: 700px;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    /*background-color: red;*/
+    /*visibility: hidden;*/
+    /*cursor: pointer;*/
+}
+
+.click-right {
+    position: absolute;
+    height: 100%;
+    width: 325px;
+    left: 1025px;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    /*background-color: blue;*/
+    /*visibility: hidden;*/
+    /*cursor: pointer;*/
+}
+
+.confirm-button{
+    /*height: 10px;*/
+    position: absolute;
+    top: 720px;
+    left: 280px;
+    /*height: 75px;*/
+    /*width: 75px;*/
+    /*align-content: center;*/
+    /*background: transparent;*/
+    /*border: none !important;*/
+    /*font-size:0;*/
+    cursor: pointer;
+}
+
+.button-img{
+    height: 75px;
+}
+
+.page-content{
+    position: relative;
+    left: 40px;
+    top: 120px;
+}
+
+.invite-form{
+    position: relative;
+    /*left: 250px;*/
+    display: flex;
+    width: 600px;
+}
+
+/*.inline{*/
+/*    flex-basis: px;*/
+/*}*/
+
+h3{
+    font-size: x-large;
+    text-align: center;
+    border-top: 10px;
+    margin: auto;
+}
+
+.submit-btn{
+    background: #924A3C;
+    position: relative;
+    top: 40px;
+    left: 265px;
+    font-weight: bold;
+}
+
+.Thanks{
+    position: relative;
+    top: 350px;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.decline{
+    position: relative;
+    left: 40px;
+    top: 250px;
+}
+
+h2{
+    position: relative;
+    transform: rotate(-90deg);
+    left: -150px;
+    top: -200px;
+    color: #644543;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    /*body{*/
+    /*    background: blue;*/
+    /*}*/
+    p{
+        max-width: 260px;
+        font-size: 12px;
+    }
+    .page{
+        margin: 0;
+        width: 320px;
+        left: 0px;
+        top : 30px;
+    }
+    .page-front, .page-back {
+        width: 320px;
+    }
+    .click-right, .click-left{
+        width: 160px;
+        height: 100%;
+    }
+    .click-left{
+        left: 0px;
+    }
+    .click-right{
+        left: 160px;
+    }
+    .confirm-button{
+        position: relative;
+        top: 350px;
+        left: 150px;
+    }
+    .button-img{
+        height: 20px;
+    }
+    .page-content{
+        position: relative;
+        left: 30px;
+        top: 60px;
+    }
+    .invite-form{
+        width: 260px;
+    }
+    h3{
+        border-top: 8px;
+    }
+    .submit-btn{
+        top: 10px;
+        left: 100px;
+    }
+    .Thanks{
+        position: relative;
+        top: 120px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .decline{
+        left: 30px;
+        top: 130px;
+    }
+    h2{
+        left: -75px;
+        top: -95px;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px){
+    /*body{*/
+    /*    background: green;*/
+    /*}*/
+    p{
+        max-width: 380px;
+        font-size: 20px;
+    }
+    .page{
+        width: 480px;
+        left: 0px;
+        top : 30px;
+    }
+    .page-front, .page-back {
+        width: 480px;
+    }
+    .click-right, .click-left{
+        width: 240px;
+        height: 100%;
+    }
+    .click-left{
+        left: 0px;
+    }
+    .click-right{
+        left: 240px;
+    }
+    .confirm-button{
+        position: relative;
+        top: 530px;
+        left: 220px;
+    }
+    .button-img{
+        height: 40px;
+    }
+    .page-content{
+        position: relative;
+        left: 50px;
+        top: 90px;
+    }
+    .invite-form{
+        width: 400px;
+    }
+    h3{
+        border-top: 8px;
+    }
+    .submit-btn{
+        top: 20px;
+        left: 165px;
+    }
+    .Thanks{
+        position: relative;
+        top: 200px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .decline{
+        left: 50px;
+        top: 170px;
+    }
+    h2{
+        left: -110px;
+        top: -140px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px){
+    /*body{*/
+    /*    background: orange;*/
+    /*}*/
+    p{
+        max-width: 500px;
+        font-size: 25px;
+    }
+    .page{
+        margin: 0;
+        width: 600px;
+        left: 0px;
+        top : 30px;
+    }
+    .page-front, .page-back {
+        width: 600px;
+    }
+    .click-right, .click-left{
+        width: 300px;
+        height: 100%;
+    }
+    .click-left{
+        left: 0px;
+    }
+    .click-right{
+        left: 300px;
+    }
+    .confirm-button{
+        position: relative;
+        top: 665px;
+        left: 270px;
+    }
+    .button-img{
+        height: 60px;
+    }
+    .page-content{
+        position: relative;
+        left: 60px;
+        top: 100px;
+    }
+    .invite-form{
+        width: 500px;
+    }
+    h3{
+        border-top: 8px;
+    }
+    .submit-btn{
+        top: 25px;
+        left: 215px;
+    }
+    .Thanks{
+        position: relative;
+        top: 300px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        left: -140px;
+        top: -180px;
+        font-size: 20px;
+    }
+}
+
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 769px) and (max-width: 1024px){*/
+/*    p{*/
+
+/*    }*/
+/*    .page{*/
+
+/*    }*/
+/*    .page-front, .page-back {*/
+
+/*    }*/
+/*    .click-right, .click-left{*/
+
+/*    }*/
+/*    .click-left{*/
+
+/*    }*/
+/*    .click-right{*/
+
+/*    }*/
+/*    .confirm-button{*/
+
+/*    }*/
+/*    .button-img{*/
+
+/*    }*/
+/*    .page-content{*/
+
+/*    }*/
+/*    .invite-form{*/
+
+/*    }*/
+/*    h3{*/
+
+/*    }*/
+/*    .submit-btn{*/
+
+/*    }*/
+/*    .Thanks{*/
+
+/*    }*/
+/*    h1{*/
+
+/*    }*/
+/*}*/
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+/*@media only screen and (min-width: 1200px){*/
+/*    p{*/
+
+/*    }*/
+/*    .page{*/
+
+/*    }*/
+/*    .page-front, .page-back {*/
+
+/*    }*/
+/*    .click-right, .click-left{*/
+
+/*    }*/
+/*    .click-left{*/
+
+/*    }*/
+/*    .click-right{*/
+
+/*    }*/
+/*    .confirm-button{*/
+
+/*    }*/
+/*    .button-img{*/
+
+/*    }*/
+/*    .page-content{*/
+
+/*    }*/
+/*    .invite-form{*/
+
+/*    }*/
+/*    h3{*/
+
+/*    }*/
+/*    .submit-btn{*/
+
+/*    }*/
+/*    .Thanks{*/
+
+/*    }*/
+/*    h1{*/
+
+/*    }*/
+/*}*/

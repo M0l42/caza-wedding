@@ -1,0 +1,35 @@
+{% load static %}
+
+<head>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div style="height: 100%">
+
+    <div class="page" id="page-04">
+        <img src="{% static "img/RSVP.jpg" %}" alt="Passport" class="page-front"/>
+        <a href="{% url 'confirmation_guest' guest=guest.code %}" class="confirm-button"><img src="{% static "img/flower_button.png" %}" class="button-img"/></a>
+    </div>
+    <div class="page" id="page-03">
+        <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
+        <img src="{% static "img/Gratitude.jpg" %}" alt="Passport" class="page-front"/>
+    </div>
+    <div class="page" id="page-02">
+        <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
+        <img src="{% static "img/passport_page.jpg" %}" alt="Passport" class="page-front"/>
+
+        <h2>{{ passport_number }}</h2>
+    </div>
+    <div id="page-01" class="page transform">
+        <img src="{% static "img/passport-back.png" %}" alt="Passport" class="page-back"/>
+        <img src="{% static "img/passport.png" %}" alt="Passport" class="page-front"/>
+    </div>
+
+    <button class="click-left" id="back"></button>
+    <button class="click-right" id="forth"></button>
+</div>
+</body>
+
+<script src="{% static 'js/main.js' %}"></script>
