@@ -4,7 +4,6 @@
          url('../fonts/ananda/ananda_black_personal_use-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -14,7 +13,6 @@
          url('../fonts/ananda/ananda_personal_use-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .home-page{
@@ -22,14 +20,18 @@
     background-size: 100% 100%;
 }
 
-h4{
-    font-family: anandaregular;
+h4, h5{
+    /*font-family: anandaregular;*/
+    color: #644543;
     font-size: 80px;
     margin: auto;
     text-align: center;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+h4{
+    font-family: anandaregular;
 }
 
 body{
@@ -190,8 +192,9 @@ p{
 /*}*/
 
 h3{
+    font-family: anandaregular;
     font-size: x-large;
-    text-align: center;
+    /*text-align: center;*/
     border-top: 10px;
     margin: auto;
 }
@@ -234,6 +237,13 @@ h2{
     /*body{*/
     /*    background: blue;*/
     /*}*/
+    .home-page{
+        background-image: url("../img/background_phone.jpg");
+    }
+
+    h4, h5{
+        font-size: 40px;
+    }
     p{
         max-width: 260px;
         font-size: 12px;
@@ -302,6 +312,13 @@ h2{
     /*body{*/
     /*    background: green;*/
     /*}*/
+    .home-page{
+        background-image: url("../img/background_phone.jpg");
+    }
+
+    h4, h5{
+        font-size: 40px;
+    }
     p{
         max-width: 380px;
         font-size: 20px;
@@ -369,6 +386,13 @@ h2{
     /*body{*/
     /*    background: orange;*/
     /*}*/
+    .home-page{
+        background-image: url("../img/background_phone.jpg");
+    }
+
+    h4, h5{
+        font-size: 60px;
+    }
     p{
         max-width: 500px;
         font-size: 25px;
@@ -428,95 +452,3 @@ h2{
         font-size: 20px;
     }
 }
-
-/*!* Large devices (laptops/desktops, 992px and up) *!*/
-/*@media only screen and (min-width: 769px) and (max-width: 1024px){*/
-/*    p{*/
-
-/*    }*/
-/*    .page{*/
-
-/*    }*/
-/*    .page-front, .page-back {*/
-
-/*    }*/
-/*    .click-right, .click-left{*/
-
-/*    }*/
-/*    .click-left{*/
-
-/*    }*/
-/*    .click-right{*/
-
-/*    }*/
-/*    .confirm-button{*/
-
-/*    }*/
-/*    .button-img{*/
-
-/*    }*/
-/*    .page-content{*/
-
-/*    }*/
-/*    .invite-form{*/
-
-/*    }*/
-/*    h3{*/
-
-/*    }*/
-/*    .submit-btn{*/
-
-/*    }*/
-/*    .Thanks{*/
-
-/*    }*/
-/*    h1{*/
-
-/*    }*/
-/*}*/
-
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-/*@media only screen and (min-width: 1200px){*/
-/*    p{*/
-
-/*    }*/
-/*    .page{*/
-
-/*    }*/
-/*    .page-front, .page-back {*/
-
-/*    }*/
-/*    .click-right, .click-left{*/
-
-/*    }*/
-/*    .click-left{*/
-
-/*    }*/
-/*    .click-right{*/
-
-/*    }*/
-/*    .confirm-button{*/
-
-/*    }*/
-/*    .button-img{*/
-
-/*    }*/
-/*    .page-content{*/
-
-/*    }*/
-/*    .invite-form{*/
-
-/*    }*/
-/*    h3{*/
-
-/*    }*/
-/*    .submit-btn{*/
-
-/*    }*/
-/*    .Thanks{*/
-
-/*    }*/
-/*    h1{*/
-
-/*    }*/
-/*}*/
