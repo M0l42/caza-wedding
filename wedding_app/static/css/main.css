@@ -130,24 +130,37 @@ p{
 /*    backface-visibility: visible;*/
 /*}*/
 
-.click-left{
-    position: absolute;
-    height: 100%;
-    width: 325px;
-    left: 700px;
-    background: transparent;
-    border: none !important;
-    font-size:0;
-    /*background-color: red;*/
-    /*visibility: hidden;*/
-    /*cursor: pointer;*/
-}
+/*.click-left{*/
+/*    position: absolute;*/
+/*    height: 100%;*/
+/*    width: 325px;*/
+/*    left: 700px;*/
+/*    background: transparent;*/
+/*    border: none !important;*/
+/*    font-size:0;*/
+/*    !*background-color: red;*!*/
+/*    !*visibility: hidden;*!*/
+/*    !*cursor: pointer;*!*/
+/*}*/
 
-.click-right {
+/*.click-right {*/
+/*    position: absolute;*/
+/*    height: 100%;*/
+/*    width: 325px;*/
+/*    left: 1025px;*/
+/*    background: transparent;*/
+/*    border: none !important;*/
+/*    font-size:0;*/
+/*    !*background-color: blue;*!*/
+/*    !*visibility: hidden;*!*/
+/*    !*cursor: pointer;*!*/
+/*}*/
+
+.click-swipe {
     position: absolute;
     height: 100%;
-    width: 325px;
-    left: 1025px;
+    width: 650px;
+    left: 700px;
     background: transparent;
     border: none !important;
     font-size:0;
@@ -157,16 +170,10 @@ p{
 }
 
 .confirm-button{
-    /*height: 10px;*/
     position: absolute;
     top: 720px;
     left: 280px;
-    /*height: 75px;*/
-    /*width: 75px;*/
-    /*align-content: center;*/
-    /*background: transparent;*/
-    /*border: none !important;*/
-    /*font-size:0;*/
+    background-color: #924A3C;
     cursor: pointer;
 }
 
@@ -257,20 +264,25 @@ h2{
     .page-front, .page-back {
         width: 320px;
     }
-    .click-right, .click-left{
-        width: 160px;
-        height: 100%;
-    }
-    .click-left{
+    /*.click-right, .click-left{*/
+    /*    width: 160px;*/
+    /*    height: 100%;*/
+    /*}*/
+    /*.click-left{*/
+    /*    left: 0px;*/
+    /*}*/
+    /*.click-right{*/
+    /*    left: 160px;*/
+    /*}*/
+
+    .click-swipe {
+        width: 320px;
         left: 0px;
-    }
-    .click-right{
-        left: 160px;
     }
     .confirm-button{
         position: relative;
-        top: 350px;
-        left: 150px;
+        top: 360px;
+        left: 130px;
     }
     .button-img{
         height: 20px;
@@ -331,20 +343,24 @@ h2{
     .page-front, .page-back {
         width: 480px;
     }
-    .click-right, .click-left{
-        width: 240px;
-        height: 100%;
-    }
-    .click-left{
+    /*.click-right, .click-left{*/
+    /*    width: 240px;*/
+    /*    height: 100%;*/
+    /*}*/
+    /*.click-left{*/
+    /*    left: 0px;*/
+    /*}*/
+    /*.click-right{*/
+    /*    left: 240px;*/
+    /*}*/
+    .click-swipe {
+        width: 480px;
         left: 0px;
-    }
-    .click-right{
-        left: 240px;
     }
     .confirm-button{
         position: relative;
         top: 530px;
-        left: 220px;
+        left: 210px;
     }
     .button-img{
         height: 40px;
@@ -406,15 +422,19 @@ h2{
     .page-front, .page-back {
         width: 600px;
     }
-    .click-right, .click-left{
-        width: 300px;
-        height: 100%;
-    }
-    .click-left{
+    /*.click-right, .click-left{*/
+    /*    width: 300px;*/
+    /*    height: 100%;*/
+    /*}*/
+    /*.click-left{*/
+    /*    left: 0px;*/
+    /*}*/
+    /*.click-right{*/
+    /*    left: 300px;*/
+    /*}*/
+    .click-swipe {
+        width: 600px;
         left: 0px;
-    }
-    .click-right{
-        left: 300px;
     }
     .confirm-button{
         position: relative;

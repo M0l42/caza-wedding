@@ -7,7 +7,7 @@
 </head>
 
 <div style="height: 100%">
-    <div id="page-04" >
+    <div id="page-04" class="last-page">
         <div class="page">
             <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-front"/>
             <div class="page-content">
@@ -31,9 +31,12 @@
         <img src="{% static "img/Reminder.jpg" %}" alt="Passport" class="page-front"/>
     </div>
 
-    <button class="click-left" id="back"></button>
-    <button class="click-right" id="forth"></button>
+{#    <button class="click-left" id="back"></button>#}
+{#    <button class="click-right" id="forth"></button>#}
+    <button class="click-swipe"></button>
 </div>
 
+<script src="{% static 'js/jquery.touch.js' %}"></script>
+<script src="{% static 'js/jquery.swipe.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
 
