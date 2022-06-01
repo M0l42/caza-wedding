@@ -18,7 +18,16 @@
         </div>
     </div>
 
+    <div class="topnav" id="myTopnav">
+        <a href="{% url 'home' %}" class="active">Home</a>
+        <a href="{% url 'program' %}">Program</a>
+{#        <a><input type="text" placeholder="Search.."></a>#}
+        <button class="icon" id="hamburger">
+            <object style="pointer-events: none;" data="{% static "img/nav.svg" %}" width="20" height="20"></object>
+        </button>
+    </div>
 </div>
 
 <script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/navbar.js' %}"></script>
 

@@ -6,37 +6,47 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 
-<div style="height: 100%">
-    <div id="page-04" class="last-page">
-        <div class="page">
-            <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-front"/>
-            <div class="page-content">
-                <p>Your boarding pass will be sent to you via Messenger/Instagram. Don't forget to download your boarding pass for it will be asked by the hotel staff upon arrival at the entrance door.</p>
-                <p>We created different invitation reference number for every guest with a QR code and it will be scanned upon entering the reception venue.</p>
-                <p>À bientôt!</p>
-                <p style="font-weight: bold">See you on board!</p>
+<body>
+    <div style="height: 100%">
+        <div id="page-04" class="last-page">
+            <div class="page">
+                <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-front"/>
+                <div class="page-content">
+                    <p>Your boarding pass will be sent to you via Messenger/Instagram. Don't forget to download your boarding pass for it will be asked by the hotel staff upon arrival at the entrance door.</p>
+                    <p>We created different invitation reference number for every guest with a QR code and it will be scanned upon entering the reception venue.</p>
+                    <p>À bientôt!</p>
+                    <p style="font-weight: bold">See you on board!</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="page-03" class="page">
-        <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
-        <img src="{% static "img/Gift.jpg" %}" alt="Passport" class="page-front"/>
-    </div>
-    <div id="page-02" class="page">
-        <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
-        <img src="{% static "img/Dress Code.jpg" %}" alt="Passport" class="page-front"/>
-    </div>
-    <div id="page-01" class="page transform">
-        <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
-        <img src="{% static "img/Reminder.jpg" %}" alt="Passport" class="page-front"/>
-    </div>
+        <div id="page-03" class="page">
+            <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
+            <img src="{% static "img/Gift.jpg" %}" alt="Passport" class="page-front"/>
+        </div>
+        <div id="page-02" class="page">
+            <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
+            <img src="{% static "img/Dress Code.jpg" %}" alt="Passport" class="page-front"/>
+        </div>
+        <div id="page-01" class="page transform">
+            <img src="{% static "img/passport_empty_page.jpg" %}" alt="Passport" class="page-back"/>
+            <img src="{% static "img/Reminder.jpg" %}" alt="Passport" class="page-front"/>
+        </div>
 
-{#    <button class="click-left" id="back"></button>#}
-{#    <button class="click-right" id="forth"></button>#}
-    <button class="click-swipe"></button>
-</div>
+    {#    <button class="click-left" id="back"></button>#}
+    {#    <button class="click-right" id="forth"></button>#}
+        <button class="click-swipe"></button>
+        <div class="topnav" id="myTopnav">
+            <a href="{% url 'home' %}" class="active">Home</a>
+            <a href="{% url 'program' %}">Program</a>
+            <button class="icon" id="hamburger">
+                <object style="pointer-events: none;" data="{% static "img/nav.svg" %}" width="20" height="20"></object>
+            </button>
+        </div>
+    </div>
+</body>
 
 <script src="{% static 'js/jquery.touch.js' %}"></script>
 <script src="{% static 'js/jquery.swipe.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/navbar.js' %}"></script>
 

@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home_view, InvitationView, ConfirmationView, DetailsView, RefusedView
+from .views import home_view, program_view, InvitationView, ConfirmationView, DetailsView, RefusedView
 # from .views.home import home_view, legal_mentions
 # from .views.forms import create_deck_view
 # from .views.cards import QuickModeView, MemoryView, deck_menu_view, deck_update, \
@@ -8,8 +8,7 @@ from .views import home_view, InvitationView, ConfirmationView, DetailsView, Ref
 
 urlpatterns = [
     path('', home_view, name='home'),
-    path('invitation/', InvitationView.as_view(), name="invitation"),
-    path('invitation/confirmation/', ConfirmationView.as_view(), name="confirmation"),
+    path('program/', program_view, name='program'),
     path('invitation/<int:guest>', InvitationView.as_view(), name="invitation_guest"),
     path('invitation/<int:guest>/confirmation/', ConfirmationView.as_view(), name="confirmation_guest"),
     path('invitation/<int:guest>/details/', DetailsView.as_view(), name="details_guest"),

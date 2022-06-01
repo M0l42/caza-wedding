@@ -16,6 +16,28 @@ def home_view(requests):
     """ render the home page """
     return render(requests, 'wedding_app/home.html', context={'title': 'Home'})
 
+# class HomeView(View):
+#     template_name = 'wedding_app/invitation.html'
+#
+#     def get(self, *args, **kwargs):
+#         context = dict()
+#         try:
+#             guest = Guest.objects.get(code=kwargs['guest'])
+#             guest.read = True
+#             guest.save()
+#             context['guest'] = guest
+#             context['passport_number'] = "3222020" + str(guest.pk)
+#         except ObjectDoesNotExist:
+#             # Should only happened when a url is manually typed
+#             return HttpResponseNotFound('<h1>Page not found</h1>')
+#
+#         return render(self.request, self.template_name, context=context)
+
+
+def program_view(requests):
+    """ render the program page """
+    return render(requests, 'wedding_app/program.html', context={'title': 'Program'})
+
 
 class InvitationView(View):
     template_name = 'wedding_app/invitation.html'

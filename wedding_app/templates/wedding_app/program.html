@@ -1,0 +1,57 @@
+{% load static %}
+
+<head>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+{#<header>#}
+{#    <nav>#}
+{#        <ul>#}
+{#          <li><a href="{% url 'home' %}">Home</a></li>#}
+{#          <li><a href="{% url 'program' %}">Program</a></li>#}
+{#          <li><a href="{% url 'invitation_guest' guest=guest.code %}">Contact</a></li>#}
+{#        </ul>#}
+{#    </nav>#}
+{#</header>#}
+
+<body>
+    <div style="height: 100%">
+        <div id="page-04" class="page last-page">
+            <img src="{% static "img/program/program_back.jpg" %}" alt="Program back" class="page-back"/>
+            <img src="{% static "img/program/program_04.png" %}" alt="Program 04" class="page-front"/>
+        </div>
+        <div id="page-03" class="page">
+            <img src="{% static "img/program/program_back.jpg" %}" alt="Program back" class="page-back"/>
+            <img src="{% static "img/program/program_03.png" %}" alt="Program 03" class="page-front"/>
+        </div>
+        <div id="page-02" class="page">
+            <img src="{% static "img/program/program_back.jpg" %}" alt="Program back" class="page-back"/>
+            <img src="{% static "img/program/program_02.png" %}" alt="Program 02" class="page-front"/>
+        </div>
+        <div id="page-01" class="page transform">
+            <img src="{% static "img/program/program_back.jpg" %}" alt="Program back" class="page-back"/>
+            <img src="{% static "img/program/program_01.png" %}" alt="Program 01" class="page-front"/>
+        </div>
+
+    {#    <button class="click-left" id="back"></button>#}
+    {#    <button class="click-right" id="forth"></button>#}
+        <button class="click-swipe"></button>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="{% url 'home' %}" class="active">Home</a>
+        <a href="{% url 'program' %}">Program</a>
+{#        <a><input type="text" placeholder="Search.."></a>#}
+        <button class="icon" id="hamburger">
+            <object style="pointer-events: none;" data="{% static "img/nav.svg" %}" width="20" height="20"></object>
+        </button>
+    </div>
+</body>
+
+<script src="{% static 'js/jquery.touch.js' %}"></script>
+<script src="{% static 'js/jquery.swipe.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/navbar.js' %}"></script>
+
