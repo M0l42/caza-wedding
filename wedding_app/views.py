@@ -66,6 +66,8 @@ def boarding_pass_generator(guest):
     group_seat = GROUP[guest.group_seat][1]
     if guest.group_seat in (1, 2):
         I1.text((280, 1920), group_seat, font=my_font, fill=(0, 0, 0))
+    elif guest.group_seat is 0:
+        I1.text((220, 1920), group_seat, font=my_font, fill=(0, 0, 0))
     else:
         I1.text((300, 1920), group_seat, font=my_font, fill=(0, 0, 0))
     print("#################")
