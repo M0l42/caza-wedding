@@ -1,0 +1,24 @@
+{% load static %}
+
+<head>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="wedding icon" type="image/x-icon" href="{% static "img/logo-wedding.png" %}" />
+    <title>{{ title }}</title>
+    <meta property="og:image" content="{% static "img/logo-wedding.png" %}"/>
+</head>
+
+<div class="generate-form">
+    <form method="post" style="height: 100%">
+        {% csrf_token %}
+      <input type="submit" name="submit" value="Submit" class="generate-btn">
+    </form>
+</div>
+<div class="topnav" id="myTopnav">
+    <a href="{% url 'home' %}" class="active">Home</a>
+    <a href="{% url 'program' %}">Program</a>
+    <button class="icon" id="hamburger">
+        <object style="pointer-events: none;" data="{% static "img/nav.svg" %}" width="20" height="20"></object>
+    </button>
+</div>

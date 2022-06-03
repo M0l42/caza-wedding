@@ -353,6 +353,30 @@ h2{
 }
 
 
+.generate-form{
+    position: relative;
+    margin: auto;
+    display: block;
+    height: 25%;
+    width: 50%;
+    background-color: #555;
+    top: 25%;
+}
+
+.generate-btn{
+    position: relative;
+    margin: auto;
+    display: block;
+    top: 50%;
+    /*height: 100%;*/
+}
+
+.boarding-pass{
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
 
 @media (min-width: 320px) and (max-width: 480px){
     /*body{*/
