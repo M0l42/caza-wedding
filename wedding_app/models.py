@@ -9,7 +9,7 @@ CHOICE = [
 ]
 
 GROUP = [
-    (0, ""),
+    (0, "LOVE COUCH"),
     (1, "VIP LEFT"),
     (2, "VIP RIGHT"),
     (3, "Table 1"),
@@ -19,6 +19,7 @@ GROUP = [
     (7, "Table 5"),
     (8, "Table 6"),
     (9, "Table 7"),
+    (10, "NONE")
 ]
 
 
