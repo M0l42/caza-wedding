@@ -19,7 +19,8 @@ GROUP = [
     (7, "Table 5"),
     (8, "Table 6"),
     (9, "Table 7"),
-    (10, "NONE")
+    (10, "Table 8"),
+    (11, "NONE")
 ]
 
 
